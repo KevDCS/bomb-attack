@@ -8,21 +8,20 @@
 	</head>
 	<body>
 		<h1>Bomb Attack</h1>
-		<section class="cards-wrapper">
-
-      <!-- Carta individual -->
+		<section id="shuffle-cards" class="cards-wrapper">
+			<!-- Carta individual -->
 			<picture class="card">
-        <!-- Frente de la carta -->
+				<!-- Frente de la carta -->
 				<div class="front">
 					<img src="./images/Card_back_01.svg" alt="Carta" />
 				</div>
-        <!-- Atrás de la carta -->
+				<!-- Atrás de la carta -->
 				<div class="back">
 					<img src="./images/llama.jpg" alt="Baby Yoda" />
 				</div>
 			</picture>
 
-      <!-- Carta individual -->
+			<!-- Carta individual -->
 			<picture class="card extintor">
 				<div class="front">
 					<img src="./images/Card_back_01.svg" alt="Carta" />
@@ -35,7 +34,7 @@
 				</div>
 			</picture>
 
-      <!-- Carta individual -->
+			<!-- Carta individual -->
 			<picture class="card">
 				<div class="front">
 					<img src="./images/Card_back_01.svg" alt="Carta" />
@@ -45,7 +44,7 @@
 				</div>
 			</picture>
 
-      <!-- Carta individual -->
+			<!-- Carta individual -->
 			<picture class="card">
 				<div class="front">
 					<img src="./images/Card_back_01.svg" alt="Carta" />
@@ -55,7 +54,7 @@
 				</div>
 			</picture>
 
-      <!-- Carta individual -->
+			<!-- Carta individual -->
 			<picture class="card">
 				<div class="front">
 					<img src="./images/Card_back_01.svg" alt="Carta" />
@@ -65,7 +64,7 @@
 				</div>
 			</picture>
 
-      <!-- Carta individual -->
+			<!-- Carta individual -->
 			<picture class="card">
 				<div class="front">
 					<img src="./images/Card_back_01.svg" alt="Carta" />
@@ -75,7 +74,7 @@
 				</div>
 			</picture>
 
-      <!-- Carta individual -->
+			<!-- Carta individual -->
 			<picture class="card">
 				<div class="front">
 					<img src="./images/Card_back_01.svg" alt="Carta" />
@@ -85,7 +84,7 @@
 				</div>
 			</picture>
 
-      <!-- Carta individual -->
+			<!-- Carta individual -->
 			<picture class="card">
 				<div class="front">
 					<img src="./images/Card_back_01.svg" alt="Carta" />
@@ -95,7 +94,7 @@
 				</div>
 			</picture>
 
-      <!-- Carta individual -->
+			<!-- Carta individual -->
 			<picture class="card">
 				<div class="front">
 					<img src="./images/Card_back_01.svg" alt="Carta" />
@@ -106,4 +105,12 @@
 			</picture>
 		</section>
 	</body>
+
+	<script type="text/javascript">
+		var section = document.getElementById("shuffle-cards");
+
+		for (var i = section.children.length; i >= 0; i--) {
+			section.appendChild(section.children[(Math.random() * i) | 0]);
+		}
+	</script>
 </html>
