@@ -25,10 +25,8 @@
 	width: 100%;
 }
 
-.card:focus {
+.card.selected {
 	transform: rotateY(180deg);
-	background-color: red;
-	cursor: pointer;
 }
 
 .front,
